@@ -11,6 +11,12 @@
         <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>你好你好你好 测试2<br>222222222222222222</p>]]></content>
       
       
+      <categories>
+          
+          <category> 测试大神 </category>
+          
+      </categories>
+      
       
         <tags>
             
@@ -31,6 +37,12 @@
       
         <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>你好你好你好 测试1</p>]]></content>
       
+      
+      <categories>
+          
+          <category> Java </category>
+          
+      </categories>
       
       
         <tags>
@@ -65,6 +77,12 @@
       
         <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>333333333333333333<br>你好你好你好 测试3333333333</p>]]></content>
       
+      
+      <categories>
+          
+          <category> 渗透测试 </category>
+          
+      </categories>
       
       
     </entry>
