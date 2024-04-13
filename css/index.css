@@ -1526,7 +1526,7 @@ input::placeholder {
   z-index: -999;
   width: 100%;
   height: 100%;
-  background: url(https://img10.360buyimg.com/babel/jfs/t20260412/96429/19/39781/63976/6618e8e8F29c95957/b14c8872bc1a164b.jpg);
+  background: url(https://s2.loli.net/2024/04/13/hKx4ysknidoYZbD.jpg);
   background-attachment: local;
   background-position: center;
   background-size: cover;
@@ -3493,13 +3493,6 @@ h1.page-title + .tag-cloud-list {
   background-attachment: scroll;
   background-position: bottom;
   background-size: cover;
-}
-#footer:before {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: var(--mark-bg);
-  content: '';
 }
 #footer-wrap {
   position: relative;
