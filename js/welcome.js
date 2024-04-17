@@ -9,7 +9,7 @@ function welcome(){
         title: " 欢迎！",
         text: welcome_text+'\n博客技术仅用于展示~请勿用于非法途径！',
         imageUrl: "/image/bg.jpg",
-        timer: 5000,
+        timer: 3000,
         showConfirmButton: false
     });
 }
