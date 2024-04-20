@@ -1,0 +1,326 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>域名记录 | Yumekoの博客</title><meta name="author" content="Yume Ko"><meta name="copyright" content="Yume Ko"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="域名记录 总结">
+<meta property="og:type" content="article">
+<meta property="og:title" content="域名记录">
+<meta property="og:url" content="https://yumekowq.github.io/2024/02/28/%E7%BD%91%E7%BB%9C%E6%95%B0%E9%80%9A/A%E8%AE%B0%E5%BD%95%EF%BC%8CAAAA%E8%AE%B0%E5%BD%95%EF%BC%8CCNAME%E8%AE%B0%E5%BD%95/index.html">
+<meta property="og:site_name" content="Yumekoの博客">
+<meta property="og:description" content="域名记录 总结">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s2.loli.net/2024/04/20/fm1WV2MjZw4BLFO.jpg">
+<meta property="article:published_time" content="2024-02-27T16:01:03.000Z">
+<meta property="article:modified_time" content="2024-04-20T10:40:49.549Z">
+<meta property="article:author" content="Yume Ko">
+<meta property="article:tag" content="网络安全">
+<meta property="article:tag" content="域名记录">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.loli.net/2024/04/20/fm1WV2MjZw4BLFO.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://yumekowq.github.io/2024/02/28/%E7%BD%91%E7%BB%9C%E6%95%B0%E9%80%9A/A%E8%AE%B0%E5%BD%95%EF%BC%8CAAAA%E8%AE%B0%E5%BD%95%EF%BC%8CCNAME%E8%AE%B0%E5%BD%95/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":150},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: Yume Ko","link":"链接: ","source":"来源: Yumekoの博客","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体中文","cht_to_chs":"你已切换为简体中文","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"bottom-left"},
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '域名记录',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-04-20 18:40:49'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/js-heo@1.0.11/mainColor/heoMainColor.css"><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/js-heo@1.0.11/categoryBar/categoryBar.css"><script async src="https://cdn.jsdelivr.net/npm/js-heo@1.0.11/categoryBar/categoryBar.js"></script><script src="https://npm.elemecdn.com/echarts@4.9.0/dist/echarts.min.js"></script><span id="fps"></span><script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script><script type="text/javascript" src ="/js/welcome.js" ></script><script src="/js/sweetalert.js"></script><link rel="stylesheet" href="/css/sweetalert.css"><link rel="stylesheet" href="/css/rightMenu.css"><link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'"><meta name="generator" content="Hexo 7.1.1"></head><body><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><div class="loading-img"></div><div class="loading-image-dot"></div></div></div><script>const preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',()=> { preloader.endLoading() })
+
+if (true) {
+  document.addEventListener('pjax:send', () => { preloader.initLoading() })
+  document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+}</script><script>window.paceOptions = {
+  restartOnPushState: false
+}
+
+document.addEventListener('pjax:send', () => {
+  Pace.restart()
+})
+</script><link rel="stylesheet" href="/css/progress_bar.css"/><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/image/%E5%A4%B4%E5%83%8F.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">35</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">44</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">7</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> 目录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> 文章推荐</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/2024/04/11/hrbc/%E7%BA%A2%E6%97%A5%E9%9D%B6%E5%9C%BA01/"><i class="fa-fw fas fa-lightbulb"></i><span> 红日靶场(一)</span></a></li><li><a class="site-page child" href="/2024/04/11/hrbc/%E7%BA%A2%E6%97%A5%E9%9D%B6%E5%9C%BA02/"><i class="fa-fw fas fa-lightbulb"></i><span> 红日靶场(二)</span></a></li><li><a class="site-page child" href="/2024/04/11/hrbc/%E7%BA%A2%E6%97%A5%E9%9D%B6%E5%9C%BA03/"><i class="fa-fw fas fa-lightbulb"></i><span> 红日靶场(三)</span></a></li><li><a class="site-page child" href="javascript:toRandomPost()"><i class="fa-fw fas fa-bus"></i><span> 随机文章</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> 生活</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/life/music"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/life/tuku"><i class="fa-fw fas fa-images"></i><span> 图库</span></a></li><li><a class="site-page child" href="/life/daily"><i class="fa-fw fas fa-newspaper"></i><span> 每日早报</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> 其他</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-info-circle"></i><span> 关于本站</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></li><li><a class="site-page child" href="/charts/"><i class="fa-fw fa-solid fa-chart-line"></i><span> 文章统计</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://s2.loli.net/2024/04/20/fm1WV2MjZw4BLFO.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="Yumekoの博客"><span class="site-name">Yumekoの博客</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> 目录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> 文章推荐</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/2024/04/11/hrbc/%E7%BA%A2%E6%97%A5%E9%9D%B6%E5%9C%BA01/"><i class="fa-fw fas fa-lightbulb"></i><span> 红日靶场(一)</span></a></li><li><a class="site-page child" href="/2024/04/11/hrbc/%E7%BA%A2%E6%97%A5%E9%9D%B6%E5%9C%BA02/"><i class="fa-fw fas fa-lightbulb"></i><span> 红日靶场(二)</span></a></li><li><a class="site-page child" href="/2024/04/11/hrbc/%E7%BA%A2%E6%97%A5%E9%9D%B6%E5%9C%BA03/"><i class="fa-fw fas fa-lightbulb"></i><span> 红日靶场(三)</span></a></li><li><a class="site-page child" href="javascript:toRandomPost()"><i class="fa-fw fas fa-bus"></i><span> 随机文章</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> 生活</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/life/music"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/life/tuku"><i class="fa-fw fas fa-images"></i><span> 图库</span></a></li><li><a class="site-page child" href="/life/daily"><i class="fa-fw fas fa-newspaper"></i><span> 每日早报</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> 其他</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-info-circle"></i><span> 关于本站</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></li><li><a class="site-page child" href="/charts/"><i class="fa-fw fa-solid fa-chart-line"></i><span> 文章统计</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">域名记录</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-02-27T16:01:03.000Z" title="发表于 2024-02-28 00:01:03">2024-02-28</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-04-20T10:40:49.549Z" title="更新于 2024-04-20 18:40:49">2024-04-20</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%BD%91%E7%BB%9C%E6%95%B0%E9%80%9A/">网络数通</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.7k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>5分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="域名记录"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="A记录，AAAA记录，CNAME记录"><a href="#A记录，AAAA记录，CNAME记录" class="headerlink" title="A记录，AAAA记录，CNAME记录"></a>A记录，AAAA记录，CNAME记录</h1><p>A，AAAA 记录和 CNAME 记录都是 DNS 解析中常用的记录类型。</p>
+<h3 id="A记录"><a href="#A记录" class="headerlink" title="A记录"></a>A记录</h3><p>A记录是一种DNS（Domain Name System）记录类型，它将域名解析为IPv4地址。A记录用于指定与特定域名相关联的IPv4地址。</p>
+<p>当用户在浏览器中输入一个域名时，计算机需要将该域名转换为对应的IP地址，以便建立与服务器的连接。这就是DNS的工作原理，而A记录就是其中最常见的记录类型之一。</p>
+<p>示例：假设有一个域名example.com需要解析为IPv4地址，可以添加如下A记录：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">主机名: example.com.</span><br><span class="line">记录类型: A</span><br><span class="line">记录值: 192.0.2.1</span><br></pre></td></tr></table></figure>
+
+<h3 id="AAAA-记录（也称为-IPv6-记录）"><a href="#AAAA-记录（也称为-IPv6-记录）" class="headerlink" title="AAAA 记录（也称为 IPv6 记录）"></a>AAAA 记录（也称为 IPv6 记录）</h3><p>用于将域名解析为 IPv6 地址。它们是 IPv4 地址的扩展，用于适应 IPv6 协议的需求。AAAA 记录在支持 IPv6 的网络环境中使用。</p>
+<p>示例：假设有一个域名 example.com 需要解析为 IPv6 地址，可以添加如下 AAAA 记录：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Name: example.com.</span><br><span class="line">Type: AAAA</span><br><span class="line">Value: 2001:0db8:85a3:0000:0000:8a2e:0370:7334</span><br></pre></td></tr></table></figure>
+
+<h3 id="CNAME-记录（也称为别名记录）"><a href="#CNAME-记录（也称为别名记录）" class="headerlink" title="CNAME 记录（也称为别名记录）"></a>CNAME 记录（也称为别名记录）</h3><p>用于将一个域名指向另一个域名。它允许多个域名共享相同的 IP 地址或服务器配置，从而简化管理和维护。</p>
+<p>示例：假设有一个域名 <a target="_blank" rel="noopener" href="http://www.example.com/">www.example.com</a> 需要指向 example.com，可以添加如下 CNAME 记录：</p>
+<p>‍</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Name: www.example.com.</span><br><span class="line">Type: CNAME</span><br><span class="line">Value: example.com.</span><br></pre></td></tr></table></figure>
+
+<p>通过使用 CNAME 记录，当用户访问 <a target="_blank" rel="noopener" href="http://www.example.com/">www.example.com</a> 时，DNS 会将其解析为 example.com，并返回后者的 IP 地址。</p>
+<p>请注意，确保正确配置 AAA 记录和 CNAME 记录以及目标地址的准确性，以确保域名解析的正确性。</p>
+<h3 id="邮箱记录通常是指MX记录（Mail-Exchanger-Record）"><a href="#邮箱记录通常是指MX记录（Mail-Exchanger-Record）" class="headerlink" title="邮箱记录通常是指MX记录（Mail Exchanger Record）"></a>邮箱记录通常是指MX记录（Mail Exchanger Record）</h3><p>它用于指定接收该域名邮件的邮件服务器。<br>当有人向该域名发送电子邮件时，电子邮件服务器需要知道应该将邮件传递给哪个邮件服务器处理。这就是MX记录的作用。<br>示例：假设有一个域名example.com，并且希望将邮件发送到mail.example.com这个邮件服务器上，可以添加如下MX记录：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">主机名: example.com.</span><br><span class="line">记录类型: MX</span><br><span class="line">优先级: 10</span><br><span class="line">记录值: mail.example.com.</span><br></pre></td></tr></table></figure>
+
+<p>在上面的示例中，MX记录指定了邮件服务器的优先级为10，表示当有多个MX记录时，具有较低数字的优先级会被优先选择。记录值指定了目标邮件服务器的主机名。<br>请注意，MX记录只能指定邮件服务器的主机名，而不是IP地址。因此，在设置MX记录之前，确保您已经正确配置了邮件服务器并拥有相应的主机名。<br>同时，还可以设置多个MX记录以实现备份和负载均衡。当一台邮件服务器无法接收邮件时，邮件会发送到下一个优先级较高的邮件服务器。<br>最后，修改MX记录后可能需要一些时间才能在全球范围内生效，这是由DNS缓存机制决定的。</p>
+<p>因此，在更改MX记录后，可能需要等待一段时间才能确保邮件的正常传递。<br>总结来说，MX记录用于指定接收特定域名邮件的邮件服务器。通过正确设置MX记录，可以确保电子邮件能够正确地发送到目标邮件服务器上。</p>
+<h3 id="TXT记录"><a href="#TXT记录" class="headerlink" title="TXT记录"></a>TXT记录</h3><p>在域名中存储任意文本信息。它通常被用于验证域名所有权、设置DKIM（DomainKeys Identified Mail）等邮件认证，以及提供其他与域名相关的文本信息。</p>
+<p>示例：假设有一个域名example.com，并且需要添加一条TXT记录来验证域名所有权，可以添加如下TXT记录：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">主机名: example.com.</span><br><span class="line">记录类型: TXT</span><br><span class="line">记录值: &quot;verification_code&quot;</span><br></pre></td></tr></table></figure>
+
+<p>在上述示例中，将”verification_code”作为TXT记录的记录值。这个值可以是由域名注册商或验证服务提供商提供的特定验证代码或标识符。通过将该TXT记录添加到域名的DNS配置中，可以完成域名所有权的验证过程。</p>
+<p>除了域名验证外，TXT记录还可用于其他目的，例如在电子邮件服务器上设置SPF（Sender Policy Framework）记录，以指定允许发送电子邮件的授权服务器列表。此外，也可以在DKIM设置中使用TXT记录，以支持对发件人域的邮件身份验证。</p>
+<p>请注意，不同的服务提供商和应用程序可能对TXT记录的格式和要求有所不同。因此，在设置TXT记录时，请根据具体的需求和服务提供商的指南进行正确的配置。</p>
+<p>总结来说，TXT记录是一种用于存储任意文本信息的DNS记录类型。它通常用于域名验证、邮件认证和其他与域名相关的配置。</p>
+<h3 id="历史记录"><a href="#历史记录" class="headerlink" title="历史记录"></a>历史记录</h3><p>域名的历史记录指的是该域名在过去的时间内所经历的变更和活动。虽然每个域名的历史记录都是唯一的，但是普通用户无法直接查看完整的域名历史记录，因为这些记录通常由域名注册商和WHOIS数据库维护。</p>
+<p>以下是一些常见的域名历史记录：</p>
+<ol>
+<li>注册日期：域名的注册日期是指该域名第一次被注册的日期。这是域名历史中最早的一条记录，可以表明域名的年龄和存在时间。</li>
+<li>所有者变更：域名所有者的变更记录了在过去的时间内所有权的转移。当一位域名所有者将域名转让给另一位所有者时，会发生所有者变更。这种记录通常包括所有者的姓名、联系信息和注册日期。</li>
+<li>DNS记录变更：域名的DNS记录指定了与之相关联的IP地址、邮件服务器等信息。当域名的DNS记录发生变更时，例如修改A记录、MX记录、CNAME记录等，都会在历史记录中留下相应的变更记录。</li>
+<li>域名过期和删除：如果域名持有人未及时续费域名注册，该域名可能会过期并最终被删除。域名的过期和删除记录在历史记录中可见。</li>
+<li>WHOIS查询记录：WHOIS数据库是用于查询和存储域名注册信息的公共数据库。每次进行WHOIS查询都会生成一条记录，记录了查询的时间、请求者的IP地址等信息。</li>
+</ol>
+<p>‍</p>
+<p>‍</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://yumekowq.github.io">Yume Ko</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://yumekowq.github.io/2024/02/28/%E7%BD%91%E7%BB%9C%E6%95%B0%E9%80%9A/A%E8%AE%B0%E5%BD%95%EF%BC%8CAAAA%E8%AE%B0%E5%BD%95%EF%BC%8CCNAME%E8%AE%B0%E5%BD%95/">https://yumekowq.github.io/2024/02/28/%E7%BD%91%E7%BB%9C%E6%95%B0%E9%80%9A/A%E8%AE%B0%E5%BD%95%EF%BC%8CAAAA%E8%AE%B0%E5%BD%95%EF%BC%8CCNAME%E8%AE%B0%E5%BD%95/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://yumekowq.github.io" target="_blank">Yumekoの博客</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/">网络安全</a><a class="post-meta__tags" href="/tags/%E5%9F%9F%E5%90%8D%E8%AE%B0%E5%BD%95/">域名记录</a></div><div class="post_share"><div class="social-share" data-image="https://s2.loli.net/2024/04/20/fm1WV2MjZw4BLFO.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>赞助</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/image/wechat.jpg" target="_blank"><img class="post-qr-code-img" src="/image/wechat.jpg" alt="Wechat"/></a><div class="post-qr-code-desc">Wechat</div></li><li class="reward-item"><a href="/image/qq.jpg" target="_blank"><img class="post-qr-code-img" src="/image/qq.jpg" alt="QQ"/></a><div class="post-qr-code-desc">QQ</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2024/03/11/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/docker%E9%80%83%E9%80%B8/" title="docker逃逸"><img class="cover" src="https://s2.loli.net/2024/04/20/qzjL7opS9QA6mxX.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">docker逃逸</div></div></a></div><div class="next-post pull-right"><a href="/2024/02/23/%E7%BD%91%E7%BB%9C%E6%95%B0%E9%80%9A/%E5%8D%8F%E8%AE%AE%E7%B1%BB/" title="网络协议"><img class="cover" src="https://s2.loli.net/2024/04/20/fm1WV2MjZw4BLFO.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">网络协议</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2024/01/14/DC/DC-4/" title="DC靶机-4"><img class="cover" src="https://s2.loli.net/2024/04/20/a6u7WnBHPvYUKNM.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-01-14</div><div class="title">DC靶机-4</div></div></a></div><div><a href="/2024/02/13/DC/DC-7/" title="DC靶机-7"><img class="cover" src="https://s2.loli.net/2024/04/20/mqfQEJpGW61tSxs.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-02-13</div><div class="title">DC靶机-7</div></div></a></div><div><a href="/2024/02/12/DC/DC-6/" title="DC靶机-6"><img class="cover" src="https://s2.loli.net/2024/04/15/xdfObkXqQmuRDB6.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-02-12</div><div class="title">DC靶机-6</div></div></a></div><div><a href="/2024/02/11/DC/DC-5/" title="DC靶机-5"><img class="cover" src="https://s2.loli.net/2024/04/15/lrpzkBInuHLRbwm.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-02-11</div><div class="title">DC靶机-5</div></div></a></div><div><a href="/2024/02/11/DC/DC-9/" title="DC靶机-9"><img class="cover" src="https://s2.loli.net/2024/04/20/mqfQEJpGW61tSxs.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-02-11</div><div class="title">DC靶机-9</div></div></a></div><div><a href="/2024/02/06/hrbc/%E7%BA%A2%E6%97%A5%E9%9D%B6%E5%9C%BA01/" title="ATK—CK红队评估实战靶场一"><img class="cover" src="https://s2.loli.net/2024/04/20/GMXqopLkB8aJ5jA.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-02-06</div><div class="title">ATK—CK红队评估实战靶场一</div></div></a></div></div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="lv-container" data-id="city" data-uid="MTAyMC81OTc0MC8zNjIwMg=="></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/image/%E5%A4%B4%E5%83%8F.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Yume Ko</div><div class="author-info__description">仅用于学习交流~禁止用于非法用途！</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">35</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">44</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">7</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/yumekowq/yumekowq.github.io"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/yumekowq/yumekowq.github.io" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:yyumeko@163.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div id="welcomeee-info"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content"><p style="text-align:center;">欢迎来到 <font color="#6f42c1"><b>[Yumeko]の</b></font> 博客，<br>如果网页加载不出来，尝试 <font color="#6f42c1"><b>Ctrl+F5</b></font> 刷新网页。</p><p style="text-align:center;">博客内容仅用于<font color="red"><b>技术测试</b></font>，<br>请勿用于<font color="red"><b>非法途径!!</b></font></p></div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#A%E8%AE%B0%E5%BD%95%EF%BC%8CAAAA%E8%AE%B0%E5%BD%95%EF%BC%8CCNAME%E8%AE%B0%E5%BD%95"><span class="toc-number">1.</span> <span class="toc-text">A记录，AAAA记录，CNAME记录</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#A%E8%AE%B0%E5%BD%95"><span class="toc-number">1.0.1.</span> <span class="toc-text">A记录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#AAAA-%E8%AE%B0%E5%BD%95%EF%BC%88%E4%B9%9F%E7%A7%B0%E4%B8%BA-IPv6-%E8%AE%B0%E5%BD%95%EF%BC%89"><span class="toc-number">1.0.2.</span> <span class="toc-text">AAAA 记录（也称为 IPv6 记录）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#CNAME-%E8%AE%B0%E5%BD%95%EF%BC%88%E4%B9%9F%E7%A7%B0%E4%B8%BA%E5%88%AB%E5%90%8D%E8%AE%B0%E5%BD%95%EF%BC%89"><span class="toc-number">1.0.3.</span> <span class="toc-text">CNAME 记录（也称为别名记录）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%82%AE%E7%AE%B1%E8%AE%B0%E5%BD%95%E9%80%9A%E5%B8%B8%E6%98%AF%E6%8C%87MX%E8%AE%B0%E5%BD%95%EF%BC%88Mail-Exchanger-Record%EF%BC%89"><span class="toc-number">1.0.4.</span> <span class="toc-text">邮箱记录通常是指MX记录（Mail Exchanger Record）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#TXT%E8%AE%B0%E5%BD%95"><span class="toc-number">1.0.5.</span> <span class="toc-text">TXT记录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8E%86%E5%8F%B2%E8%AE%B0%E5%BD%95"><span class="toc-number">1.0.6.</span> <span class="toc-text">历史记录</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2024/04/28/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/MSF-kiwi%E6%A8%A1%E5%9D%97/" title="KiWi模块"><img src="https://s2.loli.net/2024/04/20/fm1WV2MjZw4BLFO.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="KiWi模块"/></a><div class="content"><a class="title" href="/2024/04/28/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/MSF-kiwi%E6%A8%A1%E5%9D%97/" title="KiWi模块">KiWi模块</a><time datetime="2024-04-27T16:01:03.000Z" title="发表于 2024-04-28 00:01:03">2024-04-28</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/04/24/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/PSexec%E5%8E%9F%E7%90%86/" title="PSexec原理"><img src="https://s2.loli.net/2024/04/20/SNxOKpVjX9B2TkH.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="PSexec原理"/></a><div class="content"><a class="title" href="/2024/04/24/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/PSexec%E5%8E%9F%E7%90%86/" title="PSexec原理">PSexec原理</a><time datetime="2024-04-23T16:01:03.000Z" title="发表于 2024-04-24 00:01:03">2024-04-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/04/22/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/%E4%B8%AD%E5%9B%BD%E8%9A%81%E5%89%91/" title="中国蚁剑"><img src="https://s2.loli.net/2024/04/15/wxdfm92MQIp86y4.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="中国蚁剑"/></a><div class="content"><a class="title" href="/2024/04/22/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/%E4%B8%AD%E5%9B%BD%E8%9A%81%E5%89%91/" title="中国蚁剑">中国蚁剑</a><time datetime="2024-04-21T16:01:03.000Z" title="发表于 2024-04-22 00:01:03">2024-04-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/04/22/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/Wpscan/" title="Wpscan"><img src="https://s2.loli.net/2024/04/15/xdfObkXqQmuRDB6.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Wpscan"/></a><div class="content"><a class="title" href="/2024/04/22/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/Wpscan/" title="Wpscan">Wpscan</a><time datetime="2024-04-21T16:01:03.000Z" title="发表于 2024-04-22 00:01:03">2024-04-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/04/21/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/Hydra/" title="Hydra"><img src="https://s2.loli.net/2024/04/15/lrpzkBInuHLRbwm.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hydra"/></a><div class="content"><a class="title" href="/2024/04/21/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/Hydra/" title="Hydra">Hydra</a><time datetime="2024-04-20T16:01:03.000Z" title="发表于 2024-04-21 00:01:03">2024-04-21</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2021 - 2024 By Yume Ko</div><div class="footer_custom_text"><a href="https://yumekowq.github.io/">Hi, welcome to my blog</a>!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">简</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div id="rightMenu"><div class="rightMenu-group rightMenu-small"><div class="rightMenu-item" id="menu-backward"><i class="fa-solid fa-arrow-left"></i></div><div class="rightMenu-item" id="menu-forward"><i class="fa-solid fa-arrow-right"></i></div><div class="rightMenu-item" id="menu-refresh"><i class="fa-solid fa-arrow-rotate-right"></i></div><div class="rightMenu-item" id="menu-home"><i class="fa-solid fa-house"></i></div></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item menu-link" href="/archives/"><i class="fa-solid fa-archive"></i><span>文章归档</span></a><a class="rightMenu-item menu-link" href="/categories/"><i class="fa-solid fa-folder-open"></i><span>文章分类</span></a><a class="rightMenu-item menu-link" href="/tags/"><i class="fa-solid fa-tags"></i><span>文章标签</span></a></div><div class="rightMenu-group rightMenu-line rightMenuNormal"><a class="rightMenu-item menu-link" id="menu-radompage" href="/random/index.html"><i class="fa-solid fa-shoe-prints"></i><span>每日日报</span></a><div class="rightMenu-item" id="menu-translate"><i class="fa-solid fa-earth-asia"></i><span>繁简切换</span></div><div class="rightMenu-item" id="menu-darkmode"><i class="fa-solid fa-moon"></i><span>切换模式</span></div></div></div><div id="rightmenu-mask"></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="/js/tw_cn.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-pjax"><script>(()=>{
+  const loadLivere = () => {
+    if (typeof LivereTower === 'object') window.LivereTower.init()
+    else {
+      (function(d, s) {
+          var j, e = d.getElementsByTagName(s)[0];
+          if (typeof LivereTower === 'function') { return; }
+          j = d.createElement(s);
+          j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+          j.async = true;
+          e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    }
+  }
+
+  if ('Livere' === 'Livere' || !false) {
+    if (false) btf.loadComment(document.getElementById('lv-container'), loadLivere)
+    else loadLivere()
+  } else {
+    window.loadOtherComment = loadLivere
+  }
+})()</script></div><script async src="/js/fps.js"></script><script defer data-pjax src="/js/rightMenu.js"></script><script src="/js/luoying.js"></script><script async data-pjax src="/js/randombg.js"></script><script src="/zhheo/random.js"></script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/dist/click-show-text.min.js" data-mobile="false" data-text="自由,爱国,法治,平等,和谐,诚信,友善" data-fontsize="15px" data-random="false" async="async"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/metingjs/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["meta[property=\"og:image\"]","meta[property=\"og:title\"]","meta[property=\"og:url\"]","head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener
+  btf.removeGlobalFnEvent('pjax')
+  btf.removeGlobalFnEvent('themeChange')
+
+  document.getElementById('rightside').classList.remove('rightside-show')
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', e => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=4.13.0"></script></div></div></body></html>
