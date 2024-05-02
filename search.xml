@@ -66,37 +66,6 @@
     
     
     <entry>
-      <title>中国蚁剑</title>
-      <link href="/2024/04/22/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/%E4%B8%AD%E5%9B%BD%E8%9A%81%E5%89%91/"/>
-      <url>/2024/04/22/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/%E4%B8%AD%E5%9B%BD%E8%9A%81%E5%89%91/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="中国蚁剑"><a href="#中国蚁剑" class="headerlink" title="中国蚁剑"></a>中国蚁剑</h1><p>中国蚁剑是 一 款比菜刀还牛的shell控制端软件</p><p>‍</p><p>​<img src="/assets/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE110445-20240420172052-4s8e9vr.png" alt="蚁剑图示">​</p><p>‍</p><h2 id="添加数据"><a href="#添加数据" class="headerlink" title="添加数据"></a>添加数据</h2><p>User-Agent：修改头部信息</p><p>POST：提交数据</p><p>​<img src="/assets/2021051722174283-20230915112041-cengdng.png" alt="2021051722174283">​</p><p>​<img src="/assets/1639911794_61bf1172505ba588380b2-20230915113346-pxg0zfu.jpg" alt="1639911794_61bf1172505ba588380b2">​</p><h2 id="编码器"><a href="#编码器" class="headerlink" title="编码器"></a>编码器</h2><p>User-Agent 设置好后，但我们却发现注入的代码基本是明文传输，如果目标有防火墙之类的设备，我们会很难连接上shell<br>antsword 提供了几种编码器也可以尝试使用，</p><p>如 chr 编码器，PHP 类型独有，通信时使用chr函数对传输的字符串进行处理拼接，可以看到请求中除了 eval 字样没有明显的特征信息</p><p>​<img src="/assets/20210517221650430-20230915112053-pyzd8yk.png" alt="20210517221650430">​</p><h2 id="编码设置"><a href="#编码设置" class="headerlink" title="编码设置"></a>编码设置</h2><p>‍</p><p>​<img src="/assets/20210517221719449-20230915112053-6ro8xh9.png" alt="20210517221719449">​</p><h2 id="插件市场"><a href="#插件市场" class="headerlink" title="插件市场"></a>插件市场</h2><p>​<img src="/assets/20210517221855990-20230915112053-igdolxv.png" alt="20210517221855990">​</p><p>‍</p><h2 id="User-Agent修改"><a href="#User-Agent修改" class="headerlink" title="User-Agent修改"></a>U<strong>ser-Agent修改</strong></h2><p>软件默认的user-agent是：User-Agent: antSword&#x2F;v2.0；</p><p>而且大部分人都不会去自定义useragent，这就给waf和蜜罐白白送了一个特征，</p><p>所以我们要修改一下源代码：</p><p>修改项目路径：</p><p>antSword\modules\request.js （修改const USER_AGENT &#x3D; ‘antSword&#x2F;v2.1’; 这一行代码！）</p><p>antSword\modules\update.js （有两处要修改；可搜索“antSword&#x2F;v2.0”来找到这两行代码！）</p><p>‍</p><p>我这里是把</p><p><strong>antSword&#x2F;v2.0</strong></p><p>或<strong>antSword&#x2F;v2.1</strong></p><p>修改为了<strong>Baiduspider-image</strong>，我改成了百度图片蜘蛛；</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 工具使用 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 网络安全 </tag>
-            
-            <tag> 工具使用 </tag>
-            
-            <tag> 中国蚁剑 </tag>
-            
-            <tag> Webshell </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Wpscan</title>
       <link href="/2024/04/22/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/Wpscan/"/>
       <url>/2024/04/22/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/Wpscan/</url>
@@ -120,6 +89,37 @@
             <tag> 漏洞扫描 </tag>
             
             <tag> Wpscan </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>中国蚁剑</title>
+      <link href="/2024/04/22/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/%E4%B8%AD%E5%9B%BD%E8%9A%81%E5%89%91/"/>
+      <url>/2024/04/22/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/%E4%B8%AD%E5%9B%BD%E8%9A%81%E5%89%91/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="中国蚁剑"><a href="#中国蚁剑" class="headerlink" title="中国蚁剑"></a>中国蚁剑</h1><p>中国蚁剑是 一 款比菜刀还牛的shell控制端软件</p><p>‍</p><p>​<img src="/assets/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE110445-20240420172052-4s8e9vr.png" alt="蚁剑图示">​</p><p>‍</p><h2 id="添加数据"><a href="#添加数据" class="headerlink" title="添加数据"></a>添加数据</h2><p>User-Agent：修改头部信息</p><p>POST：提交数据</p><p>​<img src="/assets/2021051722174283-20230915112041-cengdng.png" alt="2021051722174283">​</p><p>​<img src="/assets/1639911794_61bf1172505ba588380b2-20230915113346-pxg0zfu.jpg" alt="1639911794_61bf1172505ba588380b2">​</p><h2 id="编码器"><a href="#编码器" class="headerlink" title="编码器"></a>编码器</h2><p>User-Agent 设置好后，但我们却发现注入的代码基本是明文传输，如果目标有防火墙之类的设备，我们会很难连接上shell<br>antsword 提供了几种编码器也可以尝试使用，</p><p>如 chr 编码器，PHP 类型独有，通信时使用chr函数对传输的字符串进行处理拼接，可以看到请求中除了 eval 字样没有明显的特征信息</p><p>​<img src="/assets/20210517221650430-20230915112053-pyzd8yk.png" alt="20210517221650430">​</p><h2 id="编码设置"><a href="#编码设置" class="headerlink" title="编码设置"></a>编码设置</h2><p>‍</p><p>​<img src="/assets/20210517221719449-20230915112053-6ro8xh9.png" alt="20210517221719449">​</p><h2 id="插件市场"><a href="#插件市场" class="headerlink" title="插件市场"></a>插件市场</h2><p>​<img src="/assets/20210517221855990-20230915112053-igdolxv.png" alt="20210517221855990">​</p><p>‍</p><h2 id="User-Agent修改"><a href="#User-Agent修改" class="headerlink" title="User-Agent修改"></a>U<strong>ser-Agent修改</strong></h2><p>软件默认的user-agent是：User-Agent: antSword&#x2F;v2.0；</p><p>而且大部分人都不会去自定义useragent，这就给waf和蜜罐白白送了一个特征，</p><p>所以我们要修改一下源代码：</p><p>修改项目路径：</p><p>antSword\modules\request.js （修改const USER_AGENT &#x3D; ‘antSword&#x2F;v2.1’; 这一行代码！）</p><p>antSword\modules\update.js （有两处要修改；可搜索“antSword&#x2F;v2.0”来找到这两行代码！）</p><p>‍</p><p>我这里是把</p><p><strong>antSword&#x2F;v2.0</strong></p><p>或<strong>antSword&#x2F;v2.1</strong></p><p>修改为了<strong>Baiduspider-image</strong>，我改成了百度图片蜘蛛；</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 工具使用 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 网络安全 </tag>
+            
+            <tag> 工具使用 </tag>
+            
+            <tag> 中国蚁剑 </tag>
+            
+            <tag> Webshell </tag>
             
         </tags>
       
@@ -194,39 +194,6 @@
     
     
     <entry>
-      <title>VMIexec</title>
-      <link href="/2024/04/21/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/WMIexec/"/>
-      <url>/2024/04/21/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/WMIexec/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="WMIexec"><a href="#WMIexec" class="headerlink" title="WMIexec"></a>WMIexec</h1><p>横向渗透之wmiexec</p><h2 id="由来："><a href="#由来：" class="headerlink" title="由来："></a>由来：</h2><p>WMI的全名为“Windows Management Instrumentation”（Windows管理规范）</p><h2 id="特点："><a href="#特点：" class="headerlink" title="特点："></a>特点：</h2><p>可当作与window系统交互的API，最大优势是可以远程访问WMI系统自带，运行在内存中，</p><p>Windows默认不会将WMI的操作记录在日志中，同时攻击脚本无需写入到磁盘，具有极高的隐蔽性，不留任何痕迹</p><p>利用WMI可以进行信息收集、探测、反病毒、虚拟机检测、命令执行、权限持久化等操作。</p><p>缺点：⽹络请求较多；需要对⽅开启rpc服务，现实环境中有六七成机器不开</p><p>利用IPC连接，使用wmiexec连接远程主机。通过调用Windows本地API来获取powershell</p><h2 id="psexec与wmiexec区别"><a href="#psexec与wmiexec区别" class="headerlink" title="psexec与wmiexec区别"></a>psexec与wmiexec区别</h2><p>日志是否记录，</p><p>通过调用WMIEXEC来模拟psexec的功能。</p><h2 id="wmiexec流程："><a href="#wmiexec流程：" class="headerlink" title="wmiexec流程："></a>wmiexec流程：</h2><h3 id="wmiexe-vbs流程："><a href="#wmiexe-vbs流程：" class="headerlink" title="wmiexe.vbs流程："></a>wmiexe.vbs流程：</h3><p>先建立一个IPC连接—&gt;建立一个共享文件夹—&gt;</p><p>用于远程读取命令执行的结果—&gt;再把结果输出到结果共享文件—-&gt;</p><p>通过FSO组件访问远程共享文件的结果文件，将结果输出—&gt;</p><p>调用WMI执行命令删除结果文件—&gt;最后WMIexec退出时，删除文件共享。</p><p>​<img src="/assets/wmiexec%E8%AF%A6%E7%BB%86%E8%A7%A3%E9%87%8A-20231201092342-7pf79bo.png" alt="wmiexec详细解释">​</p><h3 id="基础命令使用"><a href="#基础命令使用" class="headerlink" title="基础命令使用"></a>基础命令使用</h3><p>‍</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 工具使用 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 网络安全 </tag>
-            
-            <tag> 工具使用 </tag>
-            
-            <tag> 横向渗透 </tag>
-            
-            <tag> MSF </tag>
-            
-            <tag> VMIexec </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>OneForALL</title>
       <link href="/2024/04/21/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/OneForALL/"/>
       <url>/2024/04/21/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/OneForALL/</url>
@@ -250,6 +217,39 @@
             <tag> OneForALL </tag>
             
             <tag> 子域名收集 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>VMIexec</title>
+      <link href="/2024/04/21/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/WMIexec/"/>
+      <url>/2024/04/21/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/WMIexec/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="WMIexec"><a href="#WMIexec" class="headerlink" title="WMIexec"></a>WMIexec</h1><p>横向渗透之wmiexec</p><h2 id="由来："><a href="#由来：" class="headerlink" title="由来："></a>由来：</h2><p>WMI的全名为“Windows Management Instrumentation”（Windows管理规范）</p><h2 id="特点："><a href="#特点：" class="headerlink" title="特点："></a>特点：</h2><p>可当作与window系统交互的API，最大优势是可以远程访问WMI系统自带，运行在内存中，</p><p>Windows默认不会将WMI的操作记录在日志中，同时攻击脚本无需写入到磁盘，具有极高的隐蔽性，不留任何痕迹</p><p>利用WMI可以进行信息收集、探测、反病毒、虚拟机检测、命令执行、权限持久化等操作。</p><p>缺点：⽹络请求较多；需要对⽅开启rpc服务，现实环境中有六七成机器不开</p><p>利用IPC连接，使用wmiexec连接远程主机。通过调用Windows本地API来获取powershell</p><h2 id="psexec与wmiexec区别"><a href="#psexec与wmiexec区别" class="headerlink" title="psexec与wmiexec区别"></a>psexec与wmiexec区别</h2><p>日志是否记录，</p><p>通过调用WMIEXEC来模拟psexec的功能。</p><h2 id="wmiexec流程："><a href="#wmiexec流程：" class="headerlink" title="wmiexec流程："></a>wmiexec流程：</h2><h3 id="wmiexe-vbs流程："><a href="#wmiexe-vbs流程：" class="headerlink" title="wmiexe.vbs流程："></a>wmiexe.vbs流程：</h3><p>先建立一个IPC连接—&gt;建立一个共享文件夹—&gt;</p><p>用于远程读取命令执行的结果—&gt;再把结果输出到结果共享文件—-&gt;</p><p>通过FSO组件访问远程共享文件的结果文件，将结果输出—&gt;</p><p>调用WMI执行命令删除结果文件—&gt;最后WMIexec退出时，删除文件共享。</p><p>​<img src="/assets/wmiexec%E8%AF%A6%E7%BB%86%E8%A7%A3%E9%87%8A-20231201092342-7pf79bo.png" alt="wmiexec详细解释">​</p><h3 id="基础命令使用"><a href="#基础命令使用" class="headerlink" title="基础命令使用"></a>基础命令使用</h3><p>‍</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 工具使用 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 网络安全 </tag>
+            
+            <tag> 工具使用 </tag>
+            
+            <tag> MSF </tag>
+            
+            <tag> VMIexec </tag>
+            
+            <tag> 横向渗透 </tag>
             
         </tags>
       
@@ -340,11 +340,11 @@
             
             <tag> 工具使用 </tag>
             
+            <tag> 应急响应 </tag>
+            
             <tag> Windows </tag>
             
             <tag> Linux </tag>
-            
-            <tag> 应急响应 </tag>
             
         </tags>
       
@@ -419,7 +419,7 @@
       <link href="/2024/03/20/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/FTP%E5%8C%BF%E5%90%8D%E7%99%BB%E5%BD%95%E7%AC%94%E8%AE%B0/"/>
       <url>/2024/03/20/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/FTP%E5%8C%BF%E5%90%8D%E7%99%BB%E5%BD%95%E7%AC%94%E8%AE%B0/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="FTP匿名登录笔记"><a href="#FTP匿名登录笔记" class="headerlink" title="FTP匿名登录笔记"></a>FTP匿名登录笔记</h1><h2 id="FTP（File-Transfer-Protocol）"><a href="#FTP（File-Transfer-Protocol）" class="headerlink" title="FTP（File Transfer Protocol）"></a>FTP（File Transfer Protocol）</h2><p>是一种用于在计算机网络上传输文件的标准协议。它允许用户通过客户端和服务器之间的连接进行文件的上传、下载和管理。</p><p>以下是一些关于FTP服务的详细解释：</p><ol><li>客户端和服务器：FTP服务由两个主要组件组成：客户端和服务器。客户端是用户使用的应用程序，用于连接到FTP服务器并执行文件传输操作。服务器是运行FTP服务的计算机或设备，它负责接受客户端的连接请求并提供文件传输服务。</li><li>连接模式：FTP支持两种连接模式：主动模式（Active Mode）和被动模式（Passive Mode）。在主动模式下，客户端使用随机选择的端口连接到服务器的端口20进行数据传输。在被动模式下，服务器打开一个额外的端口（通常是端口21之外的端口），并告知客户端使用该端口进行数据传输。</li><li>认证和安全性：FTP服务器可以配置为需要用户进行身份验证才能访问文件。常见的认证方式包括使用用户名和密码进行登录，或使用匿名登录（anonymous）允许公共访问。为了增加安全性，可以使用TLS&#x2F;SSL协议对FTP连接进行加密。</li><li>文件操作：FTP服务允许用户执行各种文件操作，包括上传（将文件从客户端传输到服务器）、下载（将文件从服务器传输到客户端）、删除、重命名、创建目录等。</li><li>目录结构：FTP服务器通常具有层次化的目录结构，类似于文件系统。用户可以在服务器上创建目录、导航到不同的目录，并在不同的目录中进行文件操作。</li><li>FTP命令：FTP客户端使用一系列命令与服务器进行通信。常见的FTP命令包括：登录（LOGIN）、上传（PUT）、下载（GET）、列出目录（LIST）、改变目录（CD）、删除文件（DELETE）等。</li></ol><p>请注意，FTP是一种老旧的协议，它在过去被广泛使用，但现在已经有更安全和高效的替代方案，如SFTP（SSH File Transfer Protocol）和FTPS（FTP over SSL&#x2F;TLS）。这些协议提供了更好的安全性和功能，值得考虑在安全敏感的环境中使用。</p><p>FTP匿名登录，密码为空。</p><h2 id="nmap全端口扫描"><a href="#nmap全端口扫描" class="headerlink" title="nmap全端口扫描"></a>nmap全端口扫描</h2><ul><li>“| ftp-syst:”：FTP系统信息。</li><li>“| ftp-anon: Anonymous FTP login allowed (FTP code 230)”：允许匿名FTP登录。</li><li>“|_-rw-r–r– 1 0 0 32 Jun 04 2021 flag.txt”：列出了FTP服务器上的一个文件，文件名为flag.txt。</li></ul><p>​<img src="/assets/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE170305-20240420170549-synjlx3.png" alt="屏幕截图 2023-09-18 170305">​</p><p>发现存在FTP匿名登录，并有一个flag.txt</p><h2 id="尝试FTP匿名登录："><a href="#尝试FTP匿名登录：" class="headerlink" title="尝试FTP匿名登录："></a>尝试FTP匿名登录：</h2><p>ftp <a href="mailto:&#65;&#110;&#x6f;&#110;&#x6d;&#x6f;&#117;&#x73;&#64;&#49;&#48;&#x2e;&#x31;&#50;&#57;&#x2e;&#50;&#x32;&#x34;&#x2e;&#49;&#x35;&#x33;">&#65;&#110;&#x6f;&#110;&#x6d;&#x6f;&#117;&#x73;&#64;&#49;&#48;&#x2e;&#x31;&#50;&#57;&#x2e;&#50;&#x32;&#x34;&#x2e;&#49;&#x35;&#x33;</a></p><p>get flag.txt</p><p>​<img src="/assets/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE170340-20240420170557-eqy2by3.png" alt="屏幕截图 2023-09-18 170340">​</p><h2 id="查看flag"><a href="#查看flag" class="headerlink" title="查看flag"></a>查看flag</h2><p>flag下载到本地目录</p><p>​<img src="/assets/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE170407-20240420170540-obi511o.png" alt="屏幕截图 2023-09-18 170407">​</p><p>‍</p>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="FTP匿名登录笔记"><a href="#FTP匿名登录笔记" class="headerlink" title="FTP匿名登录笔记"></a>FTP匿名登录笔记</h1><h2 id="FTP（File-Transfer-Protocol）"><a href="#FTP（File-Transfer-Protocol）" class="headerlink" title="FTP（File Transfer Protocol）"></a>FTP（File Transfer Protocol）</h2><p>是一种用于在计算机网络上传输文件的标准协议。它允许用户通过客户端和服务器之间的连接进行文件的上传、下载和管理。</p><p>以下是一些关于FTP服务的详细解释：</p><ol><li>客户端和服务器：FTP服务由两个主要组件组成：客户端和服务器。客户端是用户使用的应用程序，用于连接到FTP服务器并执行文件传输操作。服务器是运行FTP服务的计算机或设备，它负责接受客户端的连接请求并提供文件传输服务。</li><li>连接模式：FTP支持两种连接模式：主动模式（Active Mode）和被动模式（Passive Mode）。在主动模式下，客户端使用随机选择的端口连接到服务器的端口20进行数据传输。在被动模式下，服务器打开一个额外的端口（通常是端口21之外的端口），并告知客户端使用该端口进行数据传输。</li><li>认证和安全性：FTP服务器可以配置为需要用户进行身份验证才能访问文件。常见的认证方式包括使用用户名和密码进行登录，或使用匿名登录（anonymous）允许公共访问。为了增加安全性，可以使用TLS&#x2F;SSL协议对FTP连接进行加密。</li><li>文件操作：FTP服务允许用户执行各种文件操作，包括上传（将文件从客户端传输到服务器）、下载（将文件从服务器传输到客户端）、删除、重命名、创建目录等。</li><li>目录结构：FTP服务器通常具有层次化的目录结构，类似于文件系统。用户可以在服务器上创建目录、导航到不同的目录，并在不同的目录中进行文件操作。</li><li>FTP命令：FTP客户端使用一系列命令与服务器进行通信。常见的FTP命令包括：登录（LOGIN）、上传（PUT）、下载（GET）、列出目录（LIST）、改变目录（CD）、删除文件（DELETE）等。</li></ol><p>请注意，FTP是一种老旧的协议，它在过去被广泛使用，但现在已经有更安全和高效的替代方案，如SFTP（SSH File Transfer Protocol）和FTPS（FTP over SSL&#x2F;TLS）。这些协议提供了更好的安全性和功能，值得考虑在安全敏感的环境中使用。</p><p>FTP匿名登录，密码为空。</p><h2 id="nmap全端口扫描"><a href="#nmap全端口扫描" class="headerlink" title="nmap全端口扫描"></a>nmap全端口扫描</h2><ul><li>“| ftp-syst:”：FTP系统信息。</li><li>“| ftp-anon: Anonymous FTP login allowed (FTP code 230)”：允许匿名FTP登录。</li><li>“|_-rw-r–r– 1 0 0 32 Jun 04 2021 flag.txt”：列出了FTP服务器上的一个文件，文件名为flag.txt。</li></ul><p>​<img src="/assets/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE170305-20240420170549-synjlx3.png" alt="屏幕截图 2023-09-18 170305">​</p><p>发现存在FTP匿名登录，并有一个flag.txt</p><h2 id="尝试FTP匿名登录："><a href="#尝试FTP匿名登录：" class="headerlink" title="尝试FTP匿名登录："></a>尝试FTP匿名登录：</h2><p>ftp <a href="mailto:&#65;&#110;&#111;&#x6e;&#x6d;&#x6f;&#x75;&#115;&#64;&#x31;&#48;&#x2e;&#49;&#x32;&#x39;&#46;&#50;&#x32;&#x34;&#46;&#49;&#53;&#51;">&#65;&#110;&#111;&#x6e;&#x6d;&#x6f;&#x75;&#115;&#64;&#x31;&#48;&#x2e;&#49;&#x32;&#x39;&#46;&#50;&#x32;&#x34;&#46;&#49;&#53;&#51;</a></p><p>get flag.txt</p><p>​<img src="/assets/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE170340-20240420170557-eqy2by3.png" alt="屏幕截图 2023-09-18 170340">​</p><h2 id="查看flag"><a href="#查看flag" class="headerlink" title="查看flag"></a>查看flag</h2><p>flag下载到本地目录</p><p>​<img src="/assets/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE170407-20240420170540-obi511o.png" alt="屏幕截图 2023-09-18 170407">​</p><p>‍</p>]]></content>
       
       
       <categories>
@@ -534,11 +534,11 @@
             
             <tag> 工具使用 </tag>
             
-            <tag> docker逃逸 </tag>
-            
             <tag> Windows </tag>
             
             <tag> Linux </tag>
+            
+            <tag> docker逃逸 </tag>
             
         </tags>
       
@@ -603,37 +603,6 @@
     
     
     <entry>
-      <title>THinkphp</title>
-      <link href="/2024/02/22/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/ThinkPHPGUI/"/>
-      <url>/2024/02/22/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/ThinkPHPGUI/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="ThinkPHPGUI"><a href="#ThinkPHPGUI" class="headerlink" title="ThinkPHPGUI"></a>ThinkPHPGUI</h1><p>Thinkphp（GUI）漏洞利用工具，支持各版本TP漏洞检测，命令执行，getshell。</p><p>​<code>D:\A网安\工具\漏扫&gt;java -jar ThinkphpGUI-1.3-SNAPSHOT.jar</code>​</p><p>图示：</p><p><img src="/assets/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE2023-09-15110110-20240420172221-1dtmurj.png" alt="ThinkPHPGUI"></p><p>‍</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 工具使用 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 网络安全 </tag>
-            
-            <tag> 工具使用 </tag>
-            
-            <tag> THinkphp </tag>
-            
-            <tag> 漏洞扫描 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Joomscan</title>
       <link href="/2024/02/22/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/Joomscan/"/>
       <url>/2024/02/22/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/Joomscan/</url>
@@ -654,9 +623,40 @@
             
             <tag> 工具使用 </tag>
             
+            <tag> Joomscan </tag>
+            
             <tag> 漏洞扫描 </tag>
             
-            <tag> Joomscan </tag>
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>THinkphp</title>
+      <link href="/2024/02/22/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/ThinkPHPGUI/"/>
+      <url>/2024/02/22/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/ThinkPHPGUI/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="ThinkPHPGUI"><a href="#ThinkPHPGUI" class="headerlink" title="ThinkPHPGUI"></a>ThinkPHPGUI</h1><p>Thinkphp（GUI）漏洞利用工具，支持各版本TP漏洞检测，命令执行，getshell。</p><p>​<code>D:\A网安\工具\漏扫&gt;java -jar ThinkphpGUI-1.3-SNAPSHOT.jar</code>​</p><p>图示：</p><p><img src="/assets/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE2023-09-15110110-20240420172221-1dtmurj.png" alt="ThinkPHPGUI"></p><p>‍</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 工具使用 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 网络安全 </tag>
+            
+            <tag> 工具使用 </tag>
+            
+            <tag> 漏洞扫描 </tag>
+            
+            <tag> THinkphp </tag>
             
         </tags>
       
